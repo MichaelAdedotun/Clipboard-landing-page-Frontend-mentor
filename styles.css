@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/*reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*base styles*/
+
+.clipboard .clipboard-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 50px 0;
+}
+.clipboard .clipboard-logo img{
+    width: 100px;
+}
+
+.clipboard .clipboard-paragraph-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 70px 10px;
+}
+
+.clipboard .clipboard-paragraph-button h1{
+    text-align: center;
+    margin: 20px 50px 10px 50px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+
+.clipboard .clipboard-paragraph-button p{
+    text-align: center;
+    margin: 0 25px;
+    line-height: 15px;
+    font-weight: 400;
+    font-size: 11px;
+    color: hsl(210, 10%, 33%);
+}
+
+.clipboard .clipboard-paragraph-button .clipboard-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.clipboard .clipboard-paragraph-button .clipboard-buttons .cyan-btn{
+    border-bottom: 3px solid darkcyan;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 8px 90px;
+    font-size: 12px;
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+}
+
+.clipboard .clipboard-paragraph-button .clipboard-buttons .blue-btn{
+    border-bottom: 3px solid darkblue;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 8px 90px;
+    font-size: 12px;
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+}
+
+.clipboard .clipboard-header-text h2{
+    text-align: center;
+    margin: 20px 50px 10px 50px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+
+.clipboard .clipboard-header-text p{
+    text-align: center;
+    margin: 0 25px;
+    line-height: 15px;
+    font-weight: 400;
+    font-size: 11px;
+    color: hsl(210, 10%, 33%);
+}
+
+.clipboard .clipboard-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.clipboard .clipboard-content .clipboard-content-desktop-img{
+    margin: 10px 0 30px 0;
+}
+
+.clipboard .clipboard-content .clipboard-content-desktop-img img{
+    width: 300px;
+}
+
+.clipboard .clipboard-content .clipboard-content-text{
+    padding: 20px 30px;
+}
+
+.clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext h2{
+    text-align: center;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: hsl(210, 10%, 33%);
+}
+
+.clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext p{
+    text-align: center;
+    margin: 0 50px 40px 50px;
+    line-height: 17px;
+    font-weight: 400;
+    font-size: 11px;
+    color: hsl(210, 10%, 33%);
+}
+
+.clipboard .clipboard-tablet-img{
+    margin: 40px 10px 60px 10px;
+}
+
+.clipboard .clipboard-tablet-img img{
+    width: 350px;
+}
+
+.clipboard .clipboard-sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.clipboard .clipboard-sponsors .clipboard-sponsors-text{
+    margin: 80px 20px 50px 20px;
+}
+
+.clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext img{
+    margin: 0 0 30px 0;
+}
+
+.clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext h2{
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: hsl(210, 10%, 33%);
+}
+
+.clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext p{
+    text-align: center;
+    margin: 0 25px 30px 25px;
+    line-height: 17px;
+    font-weight: 400;
+    font-size: 11px;
+    color: hsl(210, 10%, 33%);
+}
+
+.clipboard .clipboard-sponsors .clipboard-sponsors-logos img{
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.clipboard-footer{
+    background-color: hsl(201, 11%, 66%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clipboard-footer .clipboard-logo-copyrights img{
+    margin: 100px 0 30px 0;
+    width: 100px;
+}
+
+.clipboard-footer .clipboard-logo-copyrights .clipboard-copyrights p{
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 17px;
+    font-weight: 400;
+    color: hsl(210, 10%, 33%);
+    cursor: pointer;
+}
+
+
+.clipboard-footer .clipboard-social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+/*mobile styles*/
+@media screen and (min-width:375px){
+    body{
+        background: url("./images/bg-header-desktop.png") no-repeat;
+        object-fit: contain;
+        font-family: 'Bai Jamjuree',sans-serif;
+        /*overflow-x: hidden;*/
+    }
+}
+
+/*laptop and desktop styles*/
+@media screen and (min-width:1200px){
+    body{
+        background: url("./images/bg-header-desktop.png") no-repeat;
+        object-fit: cover;
+        font-family: 'Bai Jamjuree',sans-serif;
+    }
+
+    .clipboard .clipboard-logo{
+        margin: 100px 0 30px 0;
+    }
+
+    .clipboard .clipboard-paragraph-button{
+        margin: 0 20px 70px 10px;
+    }
+
+    .clipboard .clipboard-paragraph-button h1{
+        font-weight: 600;
+        font-size: 2em;
+    }
+
+    .clipboard .clipboard-paragraph-button p{
+        margin: 5px 400px 20px 400px;
+        line-height: 16px;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .clipboard .clipboard-paragraph-button .clipboard-buttons{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .clipboard .clipboard-paragraph-button .clipboard-buttons .cyan-btn{
+        margin: 0 5px 20px 0;
+        padding: 10px 50px;
+        font-size: 14px;
+    }
+
+    .clipboard .clipboard-paragraph-button .clipboard-buttons .blue-btn {
+        margin: 0 0 20px 5px;
+        padding: 10px 50px;
+        font-size: 14px;
+    }
+
+    .clipboard .clipboard-header-text p {
+        margin: 0 400px;
+        line-height: 16px;
+        font-size: 13px;
+    }
+
+
+    .clipboard .clipboard-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .clipboard .clipboard-content .clipboard-content-desktop-img{
+        margin: 10px 0 30px -20px;
+    }
+
+    .clipboard .clipboard-content .clipboard-content-desktop-img img{
+        width: 500px;
+    }
+
+    .clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 70px;
+    }
+
+    .clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext h2{
+        align-self: flex-start;
+    }
+
+    .clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext p{
+        align-self: flex-start;
+        margin-left: 0;
+    }
+
+    .clipboard .clipboard-tablet-img{
+        margin: 60px 0 60px 300px;
+    }
+
+    .clipboard .clipboard-tablet-img img{
+        width: 750px;
+    }
+
+
+    .clipboard .clipboard-sponsors{
+        margin: 0 80px ;
+    }
+    .clipboard .clipboard-sponsors .clipboard-sponsors-text{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext p{
+        text-align: center;
+        margin: 0 100px 30px 100px;
+    }
+
+    .clipboard .clipboard-sponsors .clipboard-sponsors-logos {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .clipboard-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+    }
+
+    .clipboard-footer .clipboard-logo-copyrights{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 700px;
+        margin: 30px 0;
+    }
+
+    .clipboard-footer .clipboard-logo-copyrights img{
+        margin: 0 50px;
+        width: 50px;
+    }
+
+    .clipboard-footer .clipboard-logo-copyrights .clipboard-copyrights{
+        width: 500px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+    .clipboard-footer .clipboard-social-media {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        align-self: center;
+        width: 250px;
+    }
+}
