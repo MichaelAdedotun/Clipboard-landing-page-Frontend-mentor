@@ -10,14 +10,23 @@
 a{
     text-decoration: none;
 }
+p, h1,h2{
+    color: hsl(210, 10%, 33%);
+}
 
 /*base styles*/
+
+.clipboard{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
 .clipboard .clipboard-logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px 0 50px 0;
+    margin: 100px 0 30px 0;
 }
 .clipboard .clipboard-logo img{
     width: 100px;
@@ -35,7 +44,6 @@ a{
     text-align: center;
     margin: 20px 50px 10px 50px;
     font-weight: 600;
-    color: hsl(210, 10%, 33%);
 }
 
 .clipboard .clipboard-paragraph-button p{
@@ -44,19 +52,18 @@ a{
     line-height: 15px;
     font-weight: 400;
     font-size: 11px;
-    color: hsl(210, 10%, 33%);
 }
 
 .clipboard .clipboard-paragraph-button .clipboard-buttons{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    gap: 10px;
 }
 
 .clipboard .clipboard-paragraph-button .clipboard-buttons .cyan-btn{
     border-bottom: 3px solid darkcyan;
     border-radius: 30px;
-    margin-bottom: 20px;
     padding: 8px 90px;
     font-size: 12px;
     background-color: hsl(171, 66%, 44%);
@@ -66,27 +73,25 @@ a{
 .clipboard .clipboard-paragraph-button .clipboard-buttons .blue-btn{
     border-bottom: 3px solid darkblue;
     border-radius: 30px;
-    margin-bottom: 20px;
     padding: 8px 90px;
     font-size: 12px;
     background-color: hsl(233, 100%, 69%);
     color: white;
 }
 
-.clipboard .clipboard-header-text h2{
+.clipboard .clipboard-header-text{
     text-align: center;
-    margin: 20px 50px 10px 50px;
+}
+
+.clipboard .clipboard-header-text h2{
+    margin-bottom: 10px;
     font-weight: 600;
-    color: hsl(210, 10%, 33%);
 }
 
 .clipboard .clipboard-header-text p{
-    text-align: center;
-    margin: 0 25px;
-    line-height: 15px;
+    margin: 0 30px;
     font-weight: 400;
     font-size: 11px;
-    color: hsl(210, 10%, 33%);
 }
 
 .clipboard .clipboard-content{
@@ -98,7 +103,7 @@ a{
 }
 
 .clipboard .clipboard-content .clipboard-content-desktop-img{
-    margin: 10px 0 30px 0;
+    margin-bottom: 50px;
 }
 
 .clipboard .clipboard-content .clipboard-content-desktop-img img{
@@ -106,28 +111,27 @@ a{
 }
 
 .clipboard .clipboard-content .clipboard-content-text{
-    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
 }
 
 .clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext h2{
-    text-align: center;
-    margin: 0 0 5px 0;
     font-weight: 600;
     font-size: 1.3em;
-    color: hsl(210, 10%, 33%);
 }
 
 .clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext p{
-    text-align: center;
-    margin: 0 50px 40px 50px;
-    line-height: 17px;
+    margin-top: 4px;
     font-weight: 400;
     font-size: 11px;
-    color: hsl(210, 10%, 33%);
 }
 
 .clipboard .clipboard-tablet-img{
     margin: 40px 10px 60px 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .clipboard .clipboard-tablet-img img{
@@ -143,7 +147,11 @@ a{
 }
 
 .clipboard .clipboard-sponsors .clipboard-sponsors-text{
-    margin: 80px 20px 50px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 20px;
 }
 
 .clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext{
@@ -154,7 +162,7 @@ a{
 }
 
 .clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext img{
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 
 .clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext h2{
@@ -162,21 +170,18 @@ a{
     margin: 0 0 10px 0;
     font-weight: 600;
     font-size: 1.3em;
-    color: hsl(210, 10%, 33%);
 }
 
 .clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext p{
     text-align: center;
-    margin: 0 25px 30px 25px;
     line-height: 17px;
     font-weight: 400;
     font-size: 11px;
-    color: hsl(210, 10%, 33%);
 }
 
 .clipboard .clipboard-sponsors .clipboard-sponsors-logos img{
     width: 100px;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .clipboard-footer{
@@ -197,7 +202,6 @@ a{
     margin-bottom: 30px;
     line-height: 17px;
     font-weight: 400;
-    color: hsl(210, 10%, 33%);
     cursor: pointer;
 }
 
@@ -216,24 +220,15 @@ a{
         background: url("./images/bg-header-desktop.png") no-repeat;
         object-fit: contain;
         font-family: 'Bai Jamjuree',sans-serif;
-        /*overflow-x: hidden;*/
     }
 }
 
 /*laptop and desktop styles*/
-@media screen and (min-width:1200px){
+@media screen and (min-width:800px){
     body{
         background: url("./images/bg-header-desktop.png") no-repeat;
         object-fit: cover;
         font-family: 'Bai Jamjuree',sans-serif;
-    }
-
-    .clipboard .clipboard-logo{
-        margin: 100px 0 30px 0;
-    }
-
-    .clipboard .clipboard-paragraph-button{
-        margin: 0 20px 70px 10px;
     }
 
     .clipboard .clipboard-paragraph-button h1{
@@ -242,47 +237,44 @@ a{
     }
 
     .clipboard .clipboard-paragraph-button p{
-        margin: 5px 400px 20px 400px;
-        line-height: 16px;
-        font-weight: 400;
+        margin: 5px 0 15px;
         font-size: 13px;
     }
 
     .clipboard .clipboard-paragraph-button .clipboard-buttons{
-        display: flex;
         flex-direction: row;
-        margin-top: 20px;
     }
 
     .clipboard .clipboard-paragraph-button .clipboard-buttons .cyan-btn{
-        margin: 0 5px 20px 0;
         padding: 10px 50px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    .clipboard .clipboard-paragraph-button .clipboard-buttons .blue-btn {
-        margin: 0 0 20px 5px;
+    .clipboard .clipboard-paragraph-button .clipboard-buttons .blue-btn{
         padding: 10px 50px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    .clipboard .clipboard-header-text p {
-        margin: 0 400px;
+    .clipboard .clipboard-header-text p{
         line-height: 16px;
         font-size: 13px;
     }
 
 
     .clipboard .clipboard-content{
-        display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
         margin: 50px 0;
     }
 
+    .clipboard .clipboard-content .clipboard-content-text{
+        gap: 30px;
+    }
+
+
     .clipboard .clipboard-content .clipboard-content-desktop-img{
-        margin: 10px 0 30px -20px;
+        margin: 0 0 30px -20px;
     }
 
     .clipboard .clipboard-content .clipboard-content-desktop-img img{
@@ -290,42 +282,21 @@ a{
     }
 
     .clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext{
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
         margin-left: 70px;
     }
 
     .clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext h2{
-        align-self: flex-start;
+        text-align: start;
     }
 
     .clipboard .clipboard-content .clipboard-content-text .clipboard-content-text-subtext p{
-        align-self: flex-start;
-        margin-left: 0;
-    }
-
-    .clipboard .clipboard-tablet-img{
-        margin: 60px 0 60px 300px;
+        text-align: start;
     }
 
     .clipboard .clipboard-tablet-img img{
         width: 750px;
-    }
-
-
-    .clipboard .clipboard-sponsors{
-        margin: 0 80px ;
-    }
-    .clipboard .clipboard-sponsors .clipboard-sponsors-text{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .clipboard .clipboard-sponsors .clipboard-sponsors-text .clipboard-sponsors-text-subtext p{
-        text-align: center;
-        margin: 0 100px 30px 100px;
     }
 
     .clipboard .clipboard-sponsors .clipboard-sponsors-logos {
